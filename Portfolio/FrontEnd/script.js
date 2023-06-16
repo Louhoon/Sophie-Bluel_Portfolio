@@ -1,5 +1,23 @@
-const img = document.getElementById('img');
+
+function displayData(data) {
+	data.forEach(user => {
+		const figure = `<figure class="projects">
+			<img src="${user.imageUrl}"/>
+			<figcaption>${user.title}</figcaption>
+		</figure>`
+
+		document.querySelector('.gallery').insertAdjacentHTML('beforeend', figure);
+	})
+}
 
 fetch('http://localhost:5678/api/works')
-	.then(res => res.json())
-	.then(data => img.src = data[0].url)
+	.then(res => {
+		return res.json();
+	})
+	.then(data =>{
+		displayData(data);
+	});
+
+
+
+fetch('http://localhost:5678/api/categories')

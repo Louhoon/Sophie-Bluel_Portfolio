@@ -22,6 +22,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
+}
+
+a {
+	color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -105,10 +110,11 @@ li:hover {
 #introduction figure {
 	flex: 1
 }
-#introduction img {
+.sophie {
 	display: block;
 	margin: auto;
-	width: 80%;
+	width: 474px;
+	margin-right: 72px;
 }
 
 #introduction article {
@@ -183,6 +189,7 @@ input[type="submit"]{
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+	margin: 2em;
+	/* margin-top: 936px; */
 }
 
