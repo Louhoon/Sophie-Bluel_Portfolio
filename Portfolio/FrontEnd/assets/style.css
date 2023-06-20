@@ -131,6 +131,35 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
+.filter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 51px;
+	margin-top: 51px;
+}
+
+.filterButton, .filterButtonAll, #browsePictures {
+	padding: 10px 20px;
+	border-radius: 60px;
+	border: #1D6154 1px solid;
+	background: none;
+	color: #1D6154;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+	width: auto;
+	box-sizing: border-box;
+}
+.filterButton:hover, .filterButton:focus, .filterButtonAll:hover, .filterButtonAll:focus {
+	background-color: #1D6154;
+	color: #FFFFFF;
+}
+
 .gallery {
 	width: 100%;
 	display: grid;
